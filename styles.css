@@ -1,0 +1,92 @@
+/*just testing 
+p{
+	font-size: 100px; 
+}*/
+
+
+html {
+	box-sizing:border-box;
+}
+
+* *:before, *:after{
+	box-sizing: inherit;
+}
+
+body{
+	font-family: sans-serif;
+	margin: 0;
+	background: #c90442; 
+}
+
+div.wrapper{
+	display: flex;
+	justify-content: space-around;
+	padding: 40px; 
+	max-width: 1000px; 
+	margin: auto;
+}
+
+
+h2.name{
+	text-shadow: 1px 1px 2px #d3d3d3; 
+	text-align: center; 
+	font-size: 35px; 
+}
+
+div.box{
+	background: rgba(0,0,0,.2); 
+	padding: 20px;
+	margin: 10px;
+	color: white;
+	display: flex;
+	flex-direction: column; 
+	justify-content: space-between; 
+	align-items: center; 
+	border-radius: 10px; 
+	transition: .3s;
+}
+
+div.box:hover{
+	box-shadow: 0 12px 16px rgba(0,0,0,.25);
+}
+
+
+
+
+p{
+	text-align: center; 
+}
+
+
+p.feature{
+	border-bottom: 2px solid rgba(255,255,255,.1);
+	padding-bottom: 15px; 
+}
+
+
+p.description{
+	padding: 4px 15px;
+}
+
+
+p.price{
+	padding: 10px;
+	font-size: 50px; 
+}
+
+
+button {
+	width: 70%; 
+	padding: 10px;
+	font-size: 20px;
+	border-radius:10px;  
+	cursor: pointer; 
+	background: white; 
+	transition: 3s;
+}
+
+
+
+
+
+
