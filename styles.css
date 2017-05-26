@@ -6,6 +6,7 @@ p{
 
 html {
 	box-sizing:border-box;
+	font-size: 20px;
 }
 
 * *:before, *:after{
@@ -15,32 +16,25 @@ html {
 body{
 	font-family: sans-serif;
 	margin: 0;
-	background: #c90442; 
+	background: #80D2FC; 
 }
 
 div.wrapper{
 	display: flex;
 	justify-content: space-around;
 	padding: 40px; 
-	max-width: 1000px; 
+	max-width: 900px; 
 	margin: auto;
 }
 
-
-h2.name{
-	text-shadow: 1px 1px 2px #d3d3d3; 
-	text-align: center; 
-	font-size: 35px; 
-}
-
 div.box{
-	background: rgba(0,0,0,.2); 
+	background: white; 
 	padding: 20px;
 	margin: 10px;
-	color: white;
+	color: #808080;
 	display: flex;
 	flex-direction: column; 
-	justify-content: space-between; 
+	justify-content: space-around; 
 	align-items: center; 
 	border-radius: 10px; 
 	transition: .3s;
@@ -51,6 +45,11 @@ div.box:hover{
 }
 
 
+h2.name{
+	text-shadow: 2px 2px 4px #d3d3d3; 
+	text-align: center; 
+	font-size: 35px; 
+}
 
 
 p{
@@ -59,8 +58,9 @@ p{
 
 
 p.feature{
-	border-bottom: 2px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid rgba(128,128,128,.3);
 	padding-bottom: 15px; 
+	/*border: 2px solid white;*/
 }
 
 
@@ -71,19 +71,55 @@ p.description{
 
 p.price{
 	padding: 10px;
-	font-size: 50px; 
+	font-size: 20px; 
 }
-
 
 button {
+	border: 0;
 	width: 70%; 
 	padding: 10px;
-	font-size: 20px;
+	font-size: 1em;
 	border-radius:10px;  
 	cursor: pointer; 
-	background: white; 
-	transition: 3s;
+	background: #FFA500; 
+	/*border: 2px solid red;*/
+	/*transition: 3s;*/
 }
+
+
+@media only all and (max-width: 800px){
+	div.wrapper{
+		flex-direction: column; 
+	}
+
+	button{
+		width: 40%;
+		font-size: 3vw; 
+	}
+
+	p.price{
+	    font-size: 5vw; 
+	}
+
+    p.description{
+    	font-size: 3.5vw; 
+    }
+
+    p.feature{
+		/*border-bottom: 2px solid rgba(255,255,255,.1);*/
+		padding-bottom: 5px; 
+		font-size: 3.5vw;
+	}
+
+	h2.name{
+		font-size: 5.5vw;
+	}
+
+
+}
+    
+
+
 
 
 
